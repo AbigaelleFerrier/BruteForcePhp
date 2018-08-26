@@ -1,6 +1,6 @@
 <?php
 
-  function hack($string, $key) {
+function hack($string, $key) {
     $letters = str_split($string);
 
     $combos = array_unique($letters);
@@ -19,23 +19,16 @@
                     if ($key == $new) {
                         echo $new . "\r";
                         echo $i;
-                        $sortie = true;
-                    }
-                    
+                        return $i;
+                    }   
                 }
-
             }
         }
-
         $lastres = $newres;
-        
         $i++;
-
     }
-
-    //return $combos;
 }
 
-hack("abcdefghijklmnopqrstuvwxyz123456789", "mdp2teste");
+hack("abcdefghijklmnopqrstuvwxyz123456789", $_GET['pwd']);
 
 ?>
