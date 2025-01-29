@@ -12,6 +12,6 @@ for($i=1;$i<=$maxLength;$i++) {
 	$combinations += pow($size,$i);
 } 
 
-echo "Il y a $combinations possiblé";
+echo "Il y a $combinations possible";
 
 ?>
